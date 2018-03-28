@@ -1338,6 +1338,8 @@ p, h1, h2, h3, h4, h5, h6, ul, li {
 .showcase__stage-wrapper {
   position: relative;
   min-height: 460px;
+
+
 }
 
 .showcase__stage {
@@ -1351,6 +1353,8 @@ p, h1, h2, h3, h4, h5, h6, ul, li {
 
 .showcase__stage--active {
   display: block;
+  /* display: flex;
+  flex-direction: row; */
 }
 
 .showcase__slider {
