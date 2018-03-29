@@ -277,7 +277,8 @@ select {
  *    `input` and others.
  */
 button,
-html input[type="button"], input[type="reset"],
+html input[type="button"],
+input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
@@ -411,7 +412,8 @@ th {
 
 /*------------------------------------*    General styles
 \*------------------------------------*/
-html, body {
+html,
+body {
   position: relative;
   display: block;
   width: 100%;
@@ -430,7 +432,9 @@ a {
   text-decoration: none;
 }
 
-*, ::before, ::after {
+*,
+::before,
+::after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-repeat: no-repeat;
@@ -446,7 +450,15 @@ a {
   color: black;
 }
 
-p, h1, h2, h3, h4, h5, h6, ul, li {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li {
   margin: 0;
   padding: 0;
 }
@@ -490,7 +502,8 @@ p, h1, h2, h3, h4, h5, h6, ul, li {
   overflow: hidden;
 }
 
-.ghost-button:hover, .ghost-button:focus {
+.ghost-button:hover,
+.ghost-button:focus {
   color: black;
   -webkit-transition: color 400ms ease 70ms;
   transition: color 400ms ease 70ms;
@@ -514,7 +527,8 @@ p, h1, h2, h3, h4, h5, h6, ul, li {
   transition: width 200ms ease-out 1ms, height 200ms ease-out;
 }
 
-.ghost-button:hover::before, .ghost-button:focus::before {
+.ghost-button:hover::before,
+.ghost-button:focus::before {
   width: 200px;
   height: 200px;
   -webkit-transition: width 200ms ease-out 1ms, height 200ms ease-out;
@@ -523,17 +537,20 @@ p, h1, h2, h3, h4, h5, h6, ul, li {
 
 /*------------------------------------*    .ghost-button modifiers
 \*------------------------------------*/
-.ghost-button--hero:hover::before, .ghost-button--hero:focus::before {
+.ghost-button--hero:hover::before,
+.ghost-button--hero:focus::before {
   width: 400px;
   height: 400px;
 }
 
-.ghost-button--realizations:hover::before, .ghost-button--realizations:focus::before {
+.ghost-button--realizations:hover::before,
+.ghost-button--realizations:focus::before {
   width: 250px;
   height: 250px;
 }
 
-.ghost-button--contact:hover::before, .ghost-button--contact:focus::before {
+.ghost-button--contact:hover::before,
+.ghost-button--contact:focus::before {
   width: 600px;
   height: 600px;
 }
@@ -574,8 +591,18 @@ p, h1, h2, h3, h4, h5, h6, ul, li {
   transition: height 300ms ease-in-out;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(transparent));
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.7), transparent);
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(0, 0, 0, 0.7)),
+    to(transparent)
+  );
+  background-image: -webkit-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0.7),
+    transparent
+  );
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent);
 }
 
@@ -964,8 +991,18 @@ p, h1, h2, h3, h4, h5, h6, ul, li {
   width: 100%;
   height: 500px;
   content: " ";
-  background-image: -webkit-gradient(linear, left bottom, left top, from(transparent), to(rgba(0, 0, 0, 0.1)));
-  background-image: -webkit-linear-gradient(bottom, transparent, rgba(0, 0, 0, 0.1));
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(transparent),
+    to(rgba(0, 0, 0, 0.1))
+  );
+  background-image: -webkit-linear-gradient(
+    bottom,
+    transparent,
+    rgba(0, 0, 0, 0.1)
+  );
   background-image: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.1));
 }
 
@@ -1107,8 +1144,18 @@ p, h1, h2, h3, h4, h5, h6, ul, li {
   width: 100%;
   height: 500px;
   content: " ";
-  background-image: -webkit-gradient(linear, left bottom, left top, from(transparent), to(rgba(0, 0, 0, 0.1)));
-  background-image: -webkit-linear-gradient(bottom, transparent, rgba(0, 0, 0, 0.1));
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(transparent),
+    to(rgba(0, 0, 0, 0.1))
+  );
+  background-image: -webkit-linear-gradient(
+    bottom,
+    transparent,
+    rgba(0, 0, 0, 0.1)
+  );
   background-image: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.1));
 }
 
@@ -1245,8 +1292,18 @@ p, h1, h2, h3, h4, h5, h6, ul, li {
   width: 100%;
   height: 500px;
   content: " ";
-  background-image: -webkit-gradient(linear, left bottom, left top, from(transparent), to(rgba(0, 0, 0, 0.1)));
-  background-image: -webkit-linear-gradient(bottom, transparent, rgba(0, 0, 0, 0.1));
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(transparent),
+    to(rgba(0, 0, 0, 0.1))
+  );
+  background-image: -webkit-linear-gradient(
+    bottom,
+    transparent,
+    rgba(0, 0, 0, 0.1)
+  );
   background-image: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.1));
 }
 
@@ -1304,8 +1361,12 @@ p, h1, h2, h3, h4, h5, h6, ul, li {
   overflow: hidden;
   -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
-  -webkit-transition: opacity 200ms ease-in-out, height 80ms ease-in-out, border 80ms ease-in-out, -webkit-box-shadow 120ms ease-in-out, -webkit-transform 80ms ease-in-out;
-  transition: opacity 200ms ease-in-out, height 80ms ease-in-out, border 80ms ease-in-out, box-shadow 120ms ease-in-out, transform 80ms ease-in-out;
+  -webkit-transition: opacity 200ms ease-in-out, height 80ms ease-in-out,
+    border 80ms ease-in-out, -webkit-box-shadow 120ms ease-in-out,
+    -webkit-transform 80ms ease-in-out;
+  transition: opacity 200ms ease-in-out, height 80ms ease-in-out,
+    border 80ms ease-in-out, box-shadow 120ms ease-in-out,
+    transform 80ms ease-in-out;
 }
 
 .showcase__thumb:hover {
@@ -1338,8 +1399,6 @@ p, h1, h2, h3, h4, h5, h6, ul, li {
 .showcase__stage-wrapper {
   position: relative;
   min-height: 460px;
-
-
 }
 
 .showcase__stage {
@@ -1422,7 +1481,8 @@ p, h1, h2, h3, h4, h5, h6, ul, li {
   border-radius: 15px;
   background-color: rgba(255, 255, 255, 0.2);
   margin: 0 6px;
-  -webkit-transition: background-color 150ms ease-in-out, border 250ms ease-in-out;
+  -webkit-transition: background-color 150ms ease-in-out,
+    border 250ms ease-in-out;
   transition: background-color 150ms ease-in-out, border 250ms ease-in-out;
 }
 
@@ -1440,7 +1500,8 @@ p, h1, h2, h3, h4, h5, h6, ul, li {
   height: 12px;
 }
 
-.rslides_nav.prev, .rslides_nav.next {
+.rslides_nav.prev,
+.rslides_nav.next {
   position: absolute;
   z-index: 600;
   width: 300px;
@@ -1450,14 +1511,29 @@ p, h1, h2, h3, h4, h5, h6, ul, li {
   transition: opacity 200ms ease-in-out;
 }
 
-.rslides_nav.prev:hover, .rslides_nav.next:hover {
+.rslides_nav.prev:hover,
+.rslides_nav.next:hover {
   opacity: 1;
 }
 
 .rslides_nav.prev {
-  background-image: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.3)));
-  background-image: -webkit-linear-gradient(right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3));
-  background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3));
+  background-image: -webkit-gradient(
+    linear,
+    right top,
+    left top,
+    from(rgba(255, 255, 255, 0)),
+    to(rgba(255, 255, 255, 0.3))
+  );
+  background-image: -webkit-linear-gradient(
+    right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.3)
+  );
+  background-image: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.3)
+  );
   top: 0;
   left: 0;
   border-top-left-radius: 3px;
@@ -1465,9 +1541,23 @@ p, h1, h2, h3, h4, h5, h6, ul, li {
 }
 
 .rslides_nav.next {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.3)));
-  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3));
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgba(255, 255, 255, 0)),
+    to(rgba(255, 255, 255, 0.3))
+  );
+  background-image: -webkit-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.3)
+  );
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.3)
+  );
   top: 0;
   right: 0;
   border-top-right-radius: 3px;
@@ -1535,7 +1625,8 @@ p, h1, h2, h3, h4, h5, h6, ul, li {
   display: none;
 }
 
-.showcase__readmore, .showcase__readless {
+.showcase__readmore,
+.showcase__readless {
   display: inline;
   color: rgba(255, 255, 255, 0.8);
   background-color: #363636;
@@ -1567,7 +1658,11 @@ p, h1, h2, h3, h4, h5, h6, ul, li {
 \*------------------------------------*/
 .contact {
   background-color: #3b3b3b;
-  background-image: -webkit-linear-gradient(bottom right, #232526, #414345 2100px);
+  background-image: -webkit-linear-gradient(
+    bottom right,
+    #232526,
+    #414345 2100px
+  );
   background-image: linear-gradient(to top left, #232526, #414345 2100px);
   position: relative;
   overflow: hidden;
@@ -1582,8 +1677,18 @@ p, h1, h2, h3, h4, h5, h6, ul, li {
   width: 100%;
   height: 500px;
   content: " ";
-  background-image: -webkit-gradient(linear, left bottom, left top, from(transparent), to(rgba(0, 0, 0, 0.1)));
-  background-image: -webkit-linear-gradient(bottom, transparent, rgba(0, 0, 0, 0.1));
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(transparent),
+    to(rgba(0, 0, 0, 0.1))
+  );
+  background-image: -webkit-linear-gradient(
+    bottom,
+    transparent,
+    rgba(0, 0, 0, 0.1)
+  );
   background-image: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.1));
 }
 
@@ -1616,6 +1721,8 @@ p, h1, h2, h3, h4, h5, h6, ul, li {
 .contact__icons-wrapper {
   margin-top: 100px;
   text-align: center;
+  display: flex;
+  flex-direction: row;
 }
 
 .contact__icon {
@@ -1687,7 +1794,8 @@ p, h1, h2, h3, h4, h5, h6, ul, li {
   width: 100%;
   font-size: 15px;
   padding: 15px 15px 15px 15px;
-  -webkit-transition: -webkit-box-shadow 150ms ease-in-out, outline 150ms ease-in-out;
+  -webkit-transition: -webkit-box-shadow 150ms ease-in-out,
+    outline 150ms ease-in-out;
   transition: box-shadow 150ms ease-in-out, outline 150ms ease-in-out;
 }
 
@@ -1723,7 +1831,8 @@ p, h1, h2, h3, h4, h5, h6, ul, li {
   width: 100%;
   font-size: 15px;
   padding: 15px 15px 15px 15px;
-  -webkit-transition: -webkit-box-shadow 150ms ease-in-out, outline 150ms ease-in-out;
+  -webkit-transition: -webkit-box-shadow 150ms ease-in-out,
+    outline 150ms ease-in-out;
   transition: box-shadow 150ms ease-in-out, outline 150ms ease-in-out;
 }
 
@@ -2937,3 +3046,7 @@ p, h1, h2, h3, h4, h5, h6, ul, li {
 }
 
 /*# sourceMappingURL=global.css.map */
+
+.fa:hover {
+  color: darkgrey;
+}
